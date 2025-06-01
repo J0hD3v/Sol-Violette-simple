@@ -1,0 +1,86 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap'); */
+
+@font-face {
+    font-family: SolViolette;
+    src: url('../assets/Solix-Light.otf');
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+    width: 5px;
+    border-radius: 10px;
+    border: 3px solid red;
+}
+
+::-webkit-scrollbar-track {
+    width: 15px;
+    background-color: red;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+body {
+    min-height: 100vh;
+    margin: 0 auto;
+    /* padding: 2rem; */
+    font-weight: normal;
+    background-color: yellow;
+}
+
+header {
+    background-color: white;
+    padding: 2rem 0;
+    /* border-bottom: 4px solid red; */
+}
+
+h1 {
+    font-family: SolViolette;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+.menuLink {
+    background-color: yellow;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-top: 4px solid red;
+    /* &:last-of-type {
+        border-bottom: 4px solid red;
+    } */
+    &>span {
+        font-family: SolViolette;
+        font-size: 2rem;
+        font-weight: bold;
+        color: red;
+    }
+}
+
+
+.expandable {
+    font-family: SolViolette;
+    background: yellow;
+    overflow: scroll;
+    overflow-x: hidden;
+    color: #000;   
+    line-height: 50px;
+    padding: 0 2rem;
+    margin: 0 1rem;
+
+    transition: all .5s ease-in-out;
+    height: 0;
+}
+
+/* .expandable:target {
+    height: 500px;
+} */
