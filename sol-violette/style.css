@@ -22,6 +22,9 @@
     border-radius: 10px;
 }
 
+* {
+    font-family: SolViolette;
+}
 
 body {
     min-height: 100vh;
@@ -38,7 +41,6 @@ header {
     justify-content: center;
     align-items: center;
     &>h1 {
-        font-family: SolViolette;
         color: red;
         font-weight: bold;
     }
@@ -69,7 +71,6 @@ header {
     text-align: center;
     border-top: 4px solid red;
     &>span {
-        font-family: SolViolette;
         font-size: 2rem;
         font-weight: bold;
         color: red;
@@ -78,15 +79,30 @@ header {
 
 
 .expandable {
-    font-family: SolViolette;
     background: yellow;
     overflow: scroll;
     overflow-x: hidden;
     color: #000;   
-    line-height: 40px;
+    line-height: 2rem;
     padding: 0 2rem;
     margin: 0 1rem;
 
     transition: all .5s ease-in-out;
     height: 0;
+}
+
+.filters {
+    margin-bottom: 1rem;
+}
+
+.partners {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+
+    &>article {
+        color: red;
+        line-height: 1rem;
+    }
 }
