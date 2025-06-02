@@ -8,16 +8,16 @@ for (i = 0; i < menuLink.length; i++) {
     if (content.style.height === "50vh") {
         // si ouvert -> ferme
         content.style.height = "0";
-        content.style.padding = "0 2rem";
+        content.style.margin = "0 2rem";
     } else {
         // si fermé -> ouvre
         for (const section of sections) {
             // ferme les autres
             section.style.height = "0";
-            section.style.padding = "0 2rem";
+            section.style.margin = "0 2rem";
         }
         content.style.height = "50vh";
-        content.style.padding = "2rem 2rem";
+        content.style.margin = "1rem 2rem";
     }
   });
 }
