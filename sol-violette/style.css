@@ -107,15 +107,6 @@ header {
 #partners {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    @media (max-width: 450px) {
-        grid-template-columns: 1fr;
-    }
-    @media (min-width: 800px) {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    @media (min-width: 1300px) {
-        grid-template-columns: repeat(4, 1fr);
-    }
     grid-template-rows: auto;
     grid-gap: 2rem;
 
@@ -131,5 +122,21 @@ header {
         &>a {
             color: red;
         }
+    }
+}
+
+@media (max-width: 450px) {
+    #partners {
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width: 800px) {
+    #partners {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 1300px) {
+    #partners {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
