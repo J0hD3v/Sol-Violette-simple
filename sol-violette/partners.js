@@ -49,6 +49,12 @@ const filters = document.getElementById('filters').getElementsByClassName('filte
 
 for (let i=0; i<filters.length; i++) {
     filters[i].addEventListener('click', () => {
+        Array.prototype.slice.call(filters).forEach(filter => {
+            filter.style.backgroundColor = 'white';
+            filter.style.color = 'red';
+        });
+        filters[i].style.backgroundColor = 'red';
+        filters[i].style.color = 'white';
         const partners = document.getElementsByClassName('partner');
         for (const partner of partners) {
             if ((i) == 0) {
