@@ -21,7 +21,10 @@ for (i = 0; i < menuLink.length; i++) {
         content.style.margin = "1rem 2rem";
     }
 
-
+    if (this == menuLink[1]) {
+        content.style.height = "0";
+        content.style.margin = "0 2rem";
+    }
 
   });
 }
