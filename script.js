@@ -11,7 +11,6 @@ for(let i=0; i<buttons.length; i++) {
         inputsCounter++;
         passwordTry.push(buttons[i].innerText);
         if (JSON.stringify(passwordTry)==JSON.stringify(password)) {
-            console.log('ok');
             location.href = './sol-violette/solViolette.html';
         }
         newMessage += "●";

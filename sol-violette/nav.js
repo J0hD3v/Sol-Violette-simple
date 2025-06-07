@@ -20,7 +20,6 @@ for (i = 0; i < menuLink.length; i++) {
         content.style.margin = "1rem 2rem";
     }
 
-    console.log(this.href == 'file:///C:/Users/Utilisateur/Dev/projet_Jerem/projet/simple_version/sol-violette/solViolette.html#menu2');
     if (this.href == 'file:///C:/Users/Utilisateur/Dev/projet_Jerem/projet/simple_version/sol-violette/solViolette.html#menu2') {
         content.style.height = "0";
         content.style.margin = "0 2rem";
