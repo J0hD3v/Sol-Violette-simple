@@ -1,6 +1,6 @@
 const menuLink = document.getElementsByClassName("menuLink");
 const sections = document.getElementsByClassName("expandable");
-const htmlTag = document.getElementsByTagName('html');
+const body = document.getElementsByTagName('body');
 
 for (i = 0; i < menuLink.length; i++) {
     menuLink[i].addEventListener("click", function() {
@@ -24,6 +24,8 @@ for (i = 0; i < menuLink.length; i++) {
     if (this == menuLink[1]) {
         content.style.height = "0";
         content.style.margin = "0 2rem";
+        console.log(body[0]);
+        body[0].style.backgroundColor = 'red';
     }
 
   });
