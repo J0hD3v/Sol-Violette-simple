@@ -64,7 +64,7 @@ header {
 }
 
 .menuLink {
-    padding: 8px;
+    padding: 8px 0;
     background-color: yellow;
     text-decoration: none;
     display: block;

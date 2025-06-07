@@ -1,5 +1,6 @@
 const menuLink = document.getElementsByClassName("menuLink");
 const sections = document.getElementsByClassName("expandable");
+const htmlTag = document.getElementsByTagName('html');
 
 for (i = 0; i < menuLink.length; i++) {
     menuLink[i].addEventListener("click", function() {
@@ -20,10 +21,7 @@ for (i = 0; i < menuLink.length; i++) {
         content.style.margin = "1rem 2rem";
     }
 
-    if (this.href == 'file:///C:/Users/Utilisateur/Dev/projet_Jerem/projet/simple_version/sol-violette/solViolette.html#menu2') {
-        content.style.height = "0";
-        content.style.margin = "0 2rem";
-    }
+
 
   });
 }

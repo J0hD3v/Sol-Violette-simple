@@ -1,6 +1,6 @@
 const cardContainer = document.getElementById('containerCard');
 const openCard = document.getElementById('openCard');
-
+let cardIsOpen = false;
 
 cardContainer.addEventListener('click', () => {
     containerCard.style.display = 'none';
