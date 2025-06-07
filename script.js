@@ -23,3 +23,5 @@ for(let i=0; i<buttons.length; i++) {
         }
     })
 }
+
+document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
