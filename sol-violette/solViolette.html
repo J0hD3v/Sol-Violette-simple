@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="./nav.js" defer></script>
     <script src="./partners.js" defer></script>
+    <script src="./converter.js" defer></script>
+    <script src="./payment.js" defer></script>
 </head>
 <body>
 
@@ -23,17 +25,26 @@
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <p>fin</p>
             </article>
-            <a href="#menu2" class="menuLink"><span>Payer</span></a>
+            <a href="#menu2" class="menuLink" id="openCard"><span>Payer</span></a>
             <article class="expandable" id="menu2">
-                <p>Cum enim magna parturient</p>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                <p>fin</p>
+                <section id="containerCard">
+                    <img src="../assets/Carte.jpg" alt="carte" id="card">
+                </section>
             </article>
             <a href="#menu3" class="menuLink"><span>Convertir des € en £</span></a>
             <article class="expandable" id="menu3">
-                <p>Cum enim magna parturient</p>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                <p>fin</p>
+                <section id="containerConverter">
+                    <section>
+                        <input type="number" name="converter" id="converter" placeholder="..." min="0" step="1">
+                        <span class="required">€</span>
+                    </section>
+                    <button id="convertBtn">Convertir</button>
+                    <section id="containerLoader">
+                        <video autoplay loop muted disablePictureInPicture playsinline id="loaderConverter">
+                            <source src="../assets/converting-loader.webm" type="video/webm">
+                        </video>
+                    </section>
+                </section>
             </article>
             <a href="#menu4" class="menuLink"><span>Partenaires</span></a>
             <article class="expandable" id="menu4">
@@ -60,16 +71,20 @@
             </article>
             <a href="#menu5" class="menuLink"><span>Lire</span></a>
             <article class="expandable" id="menu5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam minima maxime facilis beatae deserunt, voluptatem, fugit molestias vel consectetur ipsum. Veniam molestias, neque accusamus itaque fugiat dicta qui quidem.
-                Voluptatem, est omnis deserunt autem ipsum ab culpa, ea qui commodi quasi optio nesciunt nam? Id unde quisquam eligendi aliquid. Voluptatem temporibus repellat, modi dolorum assumenda tenetur. Voluptate, eum minima?
-                Exercitationem quidem eius officia, consequuntur nulla asperiores quasi. Voluptatem, quisquam nesciunt. Recusandae soluta deleniti fuga, voluptatum ipsam impedit consequuntur nihil incidunt suscipit laboriosam saepe, optio nam in? Recusandae, accusantium et?
-                Beatae molestiae laboriosam exercitationem nihil nostrum fuga quo. Ipsam itaque laboriosam, omnis illum deserunt corporis inventore nihil nulla voluptatum, eius quae neque quidem ratione. Placeat ducimus facere quis porro reprehenderit.
-                Ex dicta quam autem qui rerum id illum dolores cupiditate? Necessitatibus dolore voluptates a at velit, ea commodi iure. Dolore aperiam debitis id. Quod, in consequuntur rerum pariatur beatae non.
-                Amet voluptates laudantium error repellat autem excepturi assumenda, ipsa necessitatibus aspernatur deleniti nisi obcaecati sequi voluptate quae odio. Consequuntur recusandae deleniti sint impedit accusamus officiis, saepe velit laudantium temporibus necessitatibus?
-                Culpa soluta rerum voluptates illum, voluptatibus temporibus eos, ratione, excepturi tempora quidem beatae! Eligendi numquam consequuntur corrupti maiores! Nobis nulla dignissimos quisquam, eligendi assumenda distinctio ut suscipit minus saepe cupiditate.
-                Odit repellat, quo ducimus officia voluptates autem. Deserunt nisi corrupti, ratione delectus exercitationem maiores ullam accusantium beatae, praesentium suscipit temporibus cum non cupiditate in odio officia illo nesciunt voluptatibus voluptates.
-                Explicabo accusamus voluptatum voluptates magnam suscipit ad tempora reprehenderit odio esse dignissimos necessitatibus quidem ex facilis tempore quo, illum quae sed nam dolorum ipsa, accusantium dolores. Sapiente odit sint itaque?
-                Maiores quasi exercitationem ullam fugit voluptatibus vitae esse modi est. Error et ullam, consequatur corrupti officiis aliquam rem suscipit iusto neque consequuntur repellat illum. Ipsam asperiores quasi dignissimos eum explicabo.
+                <p>
+                    Dans les années 1930, la Grande Dépression a donné lieu à l’apparition de centaines de monnaies en Amérique du Nord et en Europe.
+                    La plupart étaient le produit d’une réaction d’urgence, au niveau local, à l’effondrement des revenus,
+                    de l’emploi et de la circulation monétaire sur lesquels les gouvernements étaient en échec.
+                    Beaucoup n’ont ainsi pas vécu audelà de cette période exceptionnelle.
+                    Certaines avaient cependant d’autres finalités et portaient un projet alternatif.
+                    L’une d’entre elles existe encore aujourd’hui, sous la forme de la banque WIR, en Suisse.
+                    Sa monnaie a servi de référence à maintes expériences monétaires alternatives visant un espace de circulation différent de l’espace souverain, et qui ont connu un essort sans équivalent historique depuis les années 1980, en adoptant des formes nouvelles.
+                </p>
+                <p>
+                    Les monnaies alternatives, Jérome Blanc,
+                    <br>
+                    Édition Repère, Novembre 2018.
+                </p>
             </article>
         </section>
     </section>
