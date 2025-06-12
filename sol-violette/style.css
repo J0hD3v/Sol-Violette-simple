@@ -122,13 +122,10 @@ header {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
-        &>* {
-            word-break: break-all;
-        }
-
+        
         &>a {
             color: red;
+            word-break: break-all;
         }
     }
 }
