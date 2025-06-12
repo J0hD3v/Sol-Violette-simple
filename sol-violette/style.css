@@ -244,3 +244,21 @@ header {
         height: 80vh;
     }
 }
+
+
+/* ----------- Lire ----------- */
+
+.fullTextBlock {
+    margin-bottom: 2rem;
+    color: red;
+    line-height: 1rem;
+
+    /* &>.fullText {
+        
+    } */
+
+    &>.fullTextDescription {
+        font-size: smaller;
+        font-style: italic;
+    }
+}

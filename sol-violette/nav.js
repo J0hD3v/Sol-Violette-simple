@@ -24,7 +24,9 @@ for (i = 0; i < menuLink.length; i++) {
     if (this == menuLink[1]) {
         content.style.height = "0";
         content.style.margin = "0 2rem";
-        body[0].style.backgroundColor = 'red';
+        // setTimeout(() => {
+            body[0].style.backgroundColor = 'red';
+        // }, "1100");
     }
 
   });
