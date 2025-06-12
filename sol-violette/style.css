@@ -92,6 +92,9 @@ header {
     height: 0;
 }
 
+
+/* --------- partenaires ---------- */
+
 #filters {
     margin-bottom: 2rem;
     &>.filter {
@@ -119,6 +122,10 @@ header {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        &>* {
+            word-break: break-all;
+        }
 
         &>a {
             color: red;
