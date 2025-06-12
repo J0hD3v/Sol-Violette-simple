@@ -262,3 +262,68 @@ header {
         font-style: italic;
     }
 }
+
+
+/* --------- Consulter mon compte -------- */
+
+#menu1 {
+    
+    &>.cardContainer {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
+        
+        &>img {
+            width: 100%;
+            max-width: 500px;
+        }
+    }
+
+    &>.lastPayments {
+        color: red;
+        font-weight: bold;
+
+        &>section {
+            overflow-y: scroll;
+            height: 4rem;
+            padding: 0 2rem;
+
+            &>article {
+                display: flex;
+                justify-content: space-between;
+
+                &>p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    #menu1>.lastPayments>section>article {
+
+        &:not(:last-of-type) {
+            margin-bottom: 1rem;
+        }
+
+        &>p {
+            margin: 0;
+            line-height: 1;
+        }
+    }
+}
+@media (max-width: 500px) {
+    #menu1>.lastPayments>section {
+        height: 6rem;
+    }
+}
+@media (max-width: 400px) {
+    #menu1>.lastPayments>section {
+        height: 10rem;
+
+        &>article {
+            flex-direction: column;
+        }
+    }
+}
