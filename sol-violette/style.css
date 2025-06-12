@@ -107,7 +107,7 @@ header {
 
 #partners {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: auto;
     grid-gap: 2rem;
 
@@ -128,17 +128,17 @@ header {
 
 @media (max-width: 450px) {
     #partners {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
     }
 }
 @media (min-width: 800px) {
     #partners {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 @media (min-width: 1300px) {
     #partners {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 }
 
