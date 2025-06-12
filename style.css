@@ -41,7 +41,7 @@ html, body {margin: 0; height: 100%;}
     }
     
     &>#message {
-        /* color: red; */
+        height: 1rem;
         font-size: 3rem;
     }
 }
