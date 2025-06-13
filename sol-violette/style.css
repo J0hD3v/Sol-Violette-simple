@@ -3,6 +3,11 @@
     src: url('../assets/Solix-Light.otf');
 }
 
+:root {
+    --red: #fe0000;
+    --yellow: #ffed00;
+}
+
 ::-webkit-scrollbar {
     width: 15px;
 }
@@ -12,12 +17,12 @@
     -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
     width: 5px;
     border-radius: 10px;
-    border: 3px solid red;
+    border: 3px solid var(--red);
 }
 
 ::-webkit-scrollbar-track {
     width: 15px;
-    background-color: red;
+    background-color: var(--red);
     padding: 5px;
     border-radius: 10px;
 }
@@ -30,18 +35,19 @@ body {
     min-height: 100vh;
     margin: 0 auto;
     font-weight: normal;
-    background-color: yellow;
+    background-color: var(--yellow);
     /* overflow: hidden; */
 }
 
 header {
-    background-color: white;
+    background-color: var(--yellow);
     padding: 1rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 2.5rem;
     &>h1 {
-        color: red;
+        color: var(--red);
         font-weight: bold;
     }
     &>a {
@@ -56,31 +62,34 @@ header {
 
 /* #container {
     min-height: 80vh;
-    background-color: red;
+    background-color: var(--red);
 } */
 
 #content {
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid var(--red);
 }
 
 .menuLink {
     padding: 8px 0;
-    background-color: yellow;
+    background-color: var(--yellow);
     text-decoration: none;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
     width: 100%;
     text-align: center;
-    border-top: 2px solid red;
+    border-top: 2px solid var(--red);
     &>span {
         font-size: 1.5rem;
         font-weight: bold;
-        color: red;
+        color: var(--red);
     }
 }
 
 
 .expandable {
-    background: yellow;
+    background: var(--yellow);
     overflow: auto;
     overflow-x: hidden;
     color: #000;   
@@ -101,7 +110,7 @@ header {
         color: rgb(200, 0, 0);
         font-size: 1rem;
         font-weight: bold;
-        border: 2px solid red;
+        border: 2px solid var(--red);
         border-radius: 5px;
         background-color: white;
         cursor: pointer;
@@ -115,7 +124,7 @@ header {
     grid-gap: 2rem;
 
     &>article {
-        color: red;
+        color: var(--red);
         line-height: 1rem;
         text-align: center;
         display: flex;
@@ -124,7 +133,7 @@ header {
         justify-content: center;
         
         &>a {
-            color: red;
+            color: var(--red);
             word-break: break-all;
         }
     }
@@ -159,19 +168,19 @@ header {
         margin: 2rem 0;
         padding: 1rem;
         border-radius: 10px;
-        border: 2px solid red;
-        color: red;
+        border: 2px solid var(--red);
+        color: var(--red);
         font-family: SolViolette;
         font-size: 1.5rem;
         font-weight: bold;
         width: calc(50vw - 1.5rem);
     
         &:focus {
-            outline: 2.5px solid red;
+            outline: 2.5px solid var(--red);
         }
     
         &::placeholder {
-            color: red;
+            color: var(--red);
             font-family: SolViolette;
             font-size: 1.5rem;
             font-weight: bold;
@@ -188,7 +197,7 @@ header {
         position:relative;
         right:2rem;
         top: 3px;
-        color:red;
+        color:var(--red);
         font-size: 1.5rem;
         font-weight: bold;
     }
@@ -213,8 +222,8 @@ header {
     &>button {
         padding: 1rem;
         border-radius: 10px;
-        border: 2px solid red;
-        color: red;
+        border: 2px solid var(--red);
+        color: var(--red);
         font-family: SolViolette;
         font-size: 1.5rem;
         font-weight: bold;
@@ -228,7 +237,7 @@ header {
 /* --------------- Payer ----------*/
 
 #containerCard {
-    background-color: red;
+    background-color: var(--red);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -250,7 +259,7 @@ header {
 
 .fullTextBlock {
     margin-bottom: 2rem;
-    color: red;
+    color: var(--red);
     line-height: 1rem;
 
     /* &>.fullText {
@@ -259,7 +268,7 @@ header {
 
     &>.fullTextDescription {
         font-size: smaller;
-        font-style: italic;
+        /* font-style: italic; */
     }
 }
 
@@ -280,7 +289,7 @@ header {
     }
 
     &>.lastPayments {
-        color: red;
+        color: var(--red);
         font-weight: bold;
 
         &>section {

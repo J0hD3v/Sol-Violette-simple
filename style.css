@@ -3,6 +3,11 @@
     src: url('./assets/Solix-Light.otf');
 }
 
+:root {
+    --red: #fe0000;
+    --yellow: #ffed00;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -27,8 +32,8 @@ html, body {margin: 0; height: 100%;}
         border: none;
         padding: 0;
         box-sizing: border-box;
-        background-color: red;
-        color: yellow;
+        background-color: var(--red);
+        color: var(--yellow);
         font-size: 4rem;
         font-weight: bold;
         cursor: pointer;
@@ -38,7 +43,7 @@ html, body {margin: 0; height: 100%;}
         }
 
         &:active {
-            background-color: rgb(206, 34, 34);
+            background-color: #ce2222;
         }
     }
     
