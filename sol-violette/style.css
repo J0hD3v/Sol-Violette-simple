@@ -1,6 +1,10 @@
 @font-face {
-    font-family: SolViolette;
+    font-family: Solix-Light;
     src: url('../assets/Solix-Light.otf');
+}
+@font-face {
+    font-family: Grotesk-Regular;
+    src: url('../assets/Grotesk-Regular.otf');
 }
 
 :root {
@@ -28,7 +32,7 @@
 }
 
 * {
-    font-family: SolViolette;
+    font-family: Solix-Light;
 }
 
 body {
@@ -40,7 +44,7 @@ body {
 }
 
 header {
-    background-color: var(--yellow);
+    background-color: white;
     padding: 1rem 0;
     display: flex;
     justify-content: center;
@@ -54,7 +58,7 @@ header {
         position: absolute;
         right: 25px;
         &>img {
-            width: 50px;
+            width: 40px;
         }
     }
 }
@@ -170,7 +174,7 @@ header {
         border-radius: 10px;
         border: 2px solid var(--red);
         color: var(--red);
-        font-family: SolViolette;
+        font-family: Solix-Light;
         font-size: 1.5rem;
         font-weight: bold;
         width: calc(50vw - 1.5rem);
@@ -181,7 +185,7 @@ header {
     
         &::placeholder {
             color: var(--red);
-            font-family: SolViolette;
+            font-family: Solix-Light;
             font-size: 1.5rem;
             font-weight: bold;
         }
@@ -224,7 +228,7 @@ header {
         border-radius: 10px;
         border: 2px solid var(--red);
         color: var(--red);
-        font-family: SolViolette;
+        font-family: Solix-Light;
         font-size: 1.5rem;
         font-weight: bold;
         background-color: white;
@@ -269,6 +273,7 @@ header {
     &>.fullTextDescription {
         font-size: smaller;
         /* font-style: italic; */
+        font-family: Grotesk-Regular;
     }
 }
 
