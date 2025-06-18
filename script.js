@@ -37,6 +37,7 @@ function playAnimation() {
         align-items: center;
         width: 100vw;
         height: 100vh;
+        overflow: hidden;
         background-color: rgba(0, 0, 0, 0.5);
     `;
     
@@ -46,7 +47,7 @@ function playAnimation() {
     video.setAttribute("muted",'');
     video.setAttribute("disablePictureInPicture",'');
     video.setAttribute("playsinline",'');
-    video.style = "width: 70vw";
+    video.style = "width: 100vw";
     
     const source = document.createElement('source');
     source.src = "./assets/Croix-ezgif.com-gif-to-webm-converter.webm";
